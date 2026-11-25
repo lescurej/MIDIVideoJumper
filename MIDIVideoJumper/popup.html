@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div id="midi-panel">
+        <div class="midi-panel-header">MIDI Video Jumper</div>
+        <div id="not-youtube" class="midi-message">Open a YouTube video</div>
+        <div id="midi-content" class="hidden">
+            <div class="midi-row">
+                <label for="midi-select">Device</label>
+                <select id="midi-select"><option value="">-- Select MIDI input --</option></select>
+            </div>
+            <div class="midi-row">
+                <label for="channel-select">Channel</label>
+                <select id="channel-select"></select>
+            </div>
+            <div id="midi-status"></div>
+            <div class="midi-row">
+                <label class="midi-checkbox-label">
+                    <input type="checkbox" id="pause-on-release" checked>
+                    Pause on release
+                </label>
+            </div>
+            <div class="midi-row">
+                <label class="midi-checkbox-label">
+                    <input type="checkbox" id="velocity-controls-speed">
+                    Velocity controls speed
+                </label>
+            </div>
+            <div class="midi-notes-container">
+                <div class="midi-notes-label">Last note</div>
+                <div id="midi-notes-display">--</div>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
