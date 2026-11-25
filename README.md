@@ -2,6 +2,10 @@
 
 Chrome extension that controls YouTube playback with a MIDI keyboard. Map notes to video positions and toggle play/pause with note on/off.
 
+![Demo](docs/demo.gif)
+
+[Full demo (MP4)](docs/demo.mp4)
+
 ## Requirements
 
 - Google Chrome
